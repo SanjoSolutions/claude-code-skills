@@ -33,11 +33,11 @@ Develop a feature or change using test-driven development: clarify → failing t
 ### 4. Implement
 
 - **Make the minimal change** that makes the test pass. Don't add extras, don't refactor, don't handle edge cases yet.
-- **Run type checking** to catch type errors.
-- **Run linting** to catch style and correctness issues.
 
 ### 5. Verify
 
+- **Run type checking** to catch type errors.
+- **Run linting** to catch style and correctness issues.
 - **Run the test** from step 3 and confirm it passes.
 - **Run all tests** and compare against the baseline from step 2 to check for regressions.
 - **If tests fail**: Fix the implementation (not the test, unless the test is wrong). Go back to step 4.
@@ -49,7 +49,7 @@ Now that the test is green, look at the code you touched (implementation **and**
 - **DRY**: Is there duplication that can be extracted?
 - **SRP**: Is any function/module doing more than one thing?
 - **Dead code**: Did your changes make any existing code unreachable or unused? Remove it.
-- **Run tests after every refactoring change** — the green tests protect you.
+- **Run linting, then tests after every refactoring change** — the green tests protect you.
 - Keep refactoring small and incremental. Don't redesign — just clean up.
 
 ### 7. Next requirement or wrap up
