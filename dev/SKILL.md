@@ -47,6 +47,7 @@ Develop a feature or change using test-driven development: clarify → failing t
 Now that the test is green, look at the code you touched (implementation **and** tests) and apply:
 - **DRY**: Is there duplication that can be extracted?
 - **SRP**: Is any function/module doing more than one thing?
+- **Dead code**: Did your changes make any existing code unreachable or unused? Remove it.
 - **Run tests after every refactoring change** — the green tests protect you.
 - Keep refactoring small and incremental. Don't redesign — just clean up.
 
