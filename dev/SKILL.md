@@ -34,6 +34,7 @@ Develop a feature or change using test-driven development: clarify → failing t
 
 - **Make the minimal change** that makes the test pass. Don't add extras, don't refactor, don't handle edge cases yet.
 - **Run type checking** to catch type errors.
+- **Run linting** to catch style and correctness issues.
 
 ### 5. Verify
 
@@ -55,7 +56,7 @@ Now that the test is green, look at the code you touched (implementation **and**
 
 - **Are there more requirements?** If the original request has multiple aspects, go back to step 3 with the next requirement. Add one test at a time, implement, verify, refactor.
 - **Edge cases**: Once the core behavior works, add tests for edge cases if they're part of the requirement.
-- **When done**: Run type checking one final time. Summarize what was built.
+- **When done**: Run type checking and linting one final time. Summarize what was built.
 - **Do NOT commit** — leave that to the user.
 
 ## TDD loop

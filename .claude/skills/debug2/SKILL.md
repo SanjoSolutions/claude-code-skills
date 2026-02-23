@@ -43,6 +43,7 @@ Narrow down the root cause by **running code**, not just reading it. Each invest
 - **Make the minimal fix** that addresses the root cause. Don't refactor surrounding code or fix unrelated issues.
 - **Keep temporary logging in place** — it's still needed to verify the fix.
 - **Run type checking**: `npx tsc --noEmit` to catch type errors introduced by the fix.
+- **Run linting** to catch style and correctness issues introduced by the fix.
 
 ### 4. Verify the fix
 
@@ -54,7 +55,7 @@ Narrow down the root cause by **running code**, not just reading it. Each invest
 ### 5. Clean up and wrap up
 
 - **Remove all temporary logging** added during investigation (console.log, debug flags).
-- Run `npx tsc --noEmit` one final time.
+- Run `npx tsc --noEmit` and linting one final time.
 - Summarize what the root cause was and what the fix does.
 - **Do NOT commit** — leave that to the user.
 
