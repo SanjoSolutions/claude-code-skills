@@ -52,7 +52,16 @@ Narrow down the root cause by **running code**, not just reading it. Each invest
 - **If tests pass**: The bug is fixed. Proceed to step 5.
 - **If tests fail or the bug persists**: Go back to step 2 (Investigate) with the new information learned. The fix was either wrong or incomplete — don't keep guessing, re-investigate.
 
-### 5. Clean up and wrap up
+### 5. Refactor
+
+Now that the fix is verified, look at the code you touched (fix **and** tests) and apply:
+- **DRY**: Is there duplication that can be extracted?
+- **SRP**: Is any function/module doing more than one thing?
+- **Dead code**: Did your changes make any existing code unreachable or unused? Remove it.
+- **Run linting, then tests after every refactoring change** — the green tests protect you.
+- Keep refactoring small and incremental. Don't redesign — just clean up.
+
+### 6. Clean up and wrap up
 
 - **Remove all temporary logging** added during investigation (console.log, debug flags).
 - Run type checking and linting one final time.
@@ -61,7 +70,7 @@ Narrow down the root cause by **running code**, not just reading it. Each invest
 
 ## Investigation loop
 
-Steps 2–4 form a loop. Each iteration should make progress:
+Steps 2–4 form a loop (with refactoring in step 5 once verified). Each iteration should make progress:
 
 ```
 Investigate → Fix → Verify
