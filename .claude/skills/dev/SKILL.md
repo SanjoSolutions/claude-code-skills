@@ -13,9 +13,10 @@ Develop a feature or change using test-driven development: clarify → failing t
 
 ### 1. Clarify the requirement
 
-**Do NOT skip this step. Do NOT read code or write tests first.**
+**Do NOT skip this step. Do NOT write tests first.**
 
-- **Do you understand the requirement well enough to write a test for it?** If the description is ambiguous — you're unsure about inputs, outputs, edge cases, or where the code should live — **ask clarifying questions before doing anything else.**
+- **Do you understand the requirement well enough to write a test for it?** If the description is ambiguous — you're unsure about inputs, outputs, or edge cases — **ask clarifying questions before doing anything else.**
+- **Only ask about the requirement itself** — don't ask questions you can answer by reading the codebase (e.g. where code should live, existing conventions, file structure). Read the code to figure those out yourself.
 - Keep questions focused and minimal. Ask only what's needed to write the first test.
 
 ### 2. Establish a baseline
