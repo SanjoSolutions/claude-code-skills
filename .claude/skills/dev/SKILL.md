@@ -37,7 +37,7 @@ Develop a feature or change using test-driven development: clarify → failing t
 ### 5. Verify
 
 - **Run type checking** to catch type errors.
-- **Run linting** to catch style and correctness issues.
+- **Run linting** and fix any warnings or errors.
 - **Run the test** from step 3 and confirm it passes.
 - **Run all tests** and compare against the baseline from step 2 to check for regressions.
 - **If tests fail**: Fix the implementation (not the test, unless the test is wrong). Go back to step 4.

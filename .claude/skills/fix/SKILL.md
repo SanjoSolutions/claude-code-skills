@@ -46,7 +46,7 @@ Narrow down the root cause by **running code**, not just reading it. Each invest
 ### 4. Verify the fix
 
 - **Run type checking** to catch type errors introduced by the fix.
-- **Run linting** to catch style and correctness issues introduced by the fix.
+- **Run linting** and fix any warnings or errors.
 - **Run the regression test** (from step 1) and confirm it passes.
 - **Run related tests** for the affected module.
 - **If tests pass**: The bug is fixed. Proceed to step 5.
